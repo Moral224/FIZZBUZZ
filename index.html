@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <center>
+    <div id="buzz">
+        <h1 style="color: wheat; font-size: 40px;">FIZZBUZZ</h1>
+        <div class="" id="show">
+    <input type="number" placeholder="Enter your Number" autofocus id="number">
+    <button onclick="check()" class="btn" id="but">Check</button>
+    <div id="result"></div>
+</div>
+</div>
+</center>
+    <script>
+        function check() {
+            var checkFizz = number.value
+            if (checkFizz =="") {
+                result.innerHTML ="Enter your number"
+            }
+            else if (checkFizz %3==0 && checkFizz %5==0) {
+                result.innerHTML ="This Number is a FizzBuzz Number 😎"
+            }
+            else if (checkFizz %3==0) {
+                result.innerHTML ="This Number is a Fizz Number"
+            }
+            else if (checkFizz %5==0) {
+                result.innerHTML ="This Number is a Buzz Number"
+            }
+            else{
+                result.innerHTML ="This Number is Not a FizzBuzz Number 😆"
+            }
+        }
+    </script>
+</body>
+</html>
